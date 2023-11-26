@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+    <title>Design Tool Interface</title>
+</head>
+<body>
+    <div class="left-pane">
+        <div class="category">Properties</div>
+        <label>X: <input id="posX" type="number" step="1"></label>
+        <label>Y: <input id="posY" type="number" step="1"></label>
+        <label>Width: <input id="width" type="number" step="1"></label>
+        <label>Height: <input id="height" type="number" step="1"></label>
+        <label>Rotation: <input id="rotation" type="number" step="1"></label>
+        <label>Color: <input id="color" type="color"></label>
+    </div>
+
+    <div class="controls">
+        <button onclick="createDiv()">Create Div</button>
+        <button onclick="exportHTML()">Export HTML</button>
+    </div>
+
+    <div class="workspace">
+        <!-- This is where the divs will be added and manipulated -->
+    </div>
+</body>
+</html>
